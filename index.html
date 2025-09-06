@@ -76,6 +76,26 @@
             padding: 0 20px;
         }
         
+
+    .box {
+      flex: 1 1 300px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 8px;
+    }
+
+    /* 🔄 Media Query para telas menores */
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        padding: 10px;
+      }
+    }
+    
+      .box {
+        margin: 5px 0;
+      }
         .btn {
             display: inline-block;
             padding: 12px 30px;
@@ -944,7 +964,7 @@
         <!-- Card 1 - Menção Honrosa -->
         <div class="premio-card">
             <div class="premio-icon">
-                <img src="assets/obt.png.png" alt="Dispositivo GuardIA" style="width:400px; height:auto; margin-bottom:15px;">
+                <img src="assets/obt.png.png" alt="Dispositivo GuardIA" style="width:380px; height:auto; margin-bottom:15px;">
             </div>
             <h3>Menção Honrosa - Olimpíada Brasileira de Tecnologia</h3>
             <p>Nosso projeto foi reconhecido com Menção Honrosa na Olimpíada Brasileira de Tecnologia, destacando-se pela inovação e impacto social na área de segurança pessoal.</p>
@@ -953,7 +973,7 @@
         <!-- Card 2 - Prêmio Desafio do App -->
         <div class="premio-card">
             <div class="premio-icon">
-                <img src="assets/DesafioAPP (2).png" alt="Dispositivo GuardIA" style="width:400px; height:auto; margin-bottom:15px;">
+                <img src="assets/DesafioAPP (2).png" alt="Dispositivo GuardIA" style="width:380px; height:auto; margin-bottom:15px;">
             </div>
             <h3>Prêmio Desafio do App - Categoria Segurança</h3>
             <p>Nossa versão disponível em APK foi premiada no Desafio de Apps na categoria de Segurança, reconhecendo a eficiência e inovação do GuardIA na proteção de usuários.</p>
@@ -1039,7 +1059,7 @@
     
     .premio-card h3 {
         color: #333;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
         font-size: 20px;
     }
     
@@ -1185,7 +1205,7 @@
             </div>
             <div class="testimonials-container">
                 <div class="testimonial">
-                    <p class="testimonial-text">"Projeto com potencial e funcionalidades para atender demandas de segurança e preservação não só de mulheres, mas como de idosos,pessoas LGBTQIAPN+ e crianças"</p>
+                    <p class="testimonial-text">"Projeto com potencial e funcionalidades para atender demandas de segurança e preservação não só de mulheres, mas também de idosos, pessoas LGBTQIAPN+ e crianças"</p>
                     <div class="testimonial-author">
                         <div class="author-image">
                             <i class="fas fa-user"></i>
@@ -1204,7 +1224,7 @@
                         </div>
                         <div>
                             <h4>Mary Seguel</h4>
-                            <p>Instrutora de Cico, Santiago (Chile)</p>
+                            <p>Instrutora de Cisco, Santiago (Chile)</p>
                         </div>
                     </div>
                 </div>
