@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GuardIA - Segurança Inteligente com IA Integrada</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="assets/logofavicon.png.png">
     <style>
@@ -17,16 +20,16 @@
             --light: #fff;
             --gray: #f5f5f5;
             --gray-dark: #888;
-            --shadow: 0 5px 15px rgba(0,0,0,0.1);
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             --transition: all 0.3s ease;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Montserrat', sans-serif;
             color: var(--dark);
@@ -34,24 +37,28 @@
             background-color: var(--light);
             overflow-x: hidden;
         }
-        
-        h1, h2, h3, h4, h5 {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
             font-family: 'Poppins', sans-serif;
             font-weight: 700;
             margin-bottom: 1rem;
             color: var(--primary-dark);
         }
-        
+
         h1 {
             font-size: 2.8rem;
         }
-        
+
         h2 {
             font-size: 2.2rem;
             position: relative;
             padding-bottom: 15px;
         }
-        
+
         h2:after {
             content: '';
             position: absolute;
@@ -63,39 +70,40 @@
             background: var(--primary);
             border-radius: 2px;
         }
-        
+
         p {
             margin-bottom: 1.5rem;
             font-size: 1.05rem;
         }
-        
+
         .container {
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-        
 
-    .box {
-      flex: 1 1 300px;
-      margin: 10px;
-      padding: 20px;
-      background-color: #f2f2f2;
-      border-radius: 8px;
-    }
 
-    /* 🔄 Media Query para telas menores */
-    @media (max-width: 600px) {
-      .container {
-        flex-direction: column;
-        padding: 10px;
-      }
-    }
-    
-      .box {
-        margin: 5px 0;
-      }
+        .box {
+            flex: 1 1 300px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 8px;
+        }
+
+        /* 🔄 Media Query para telas menores */
+        @media (max-width: 600px) {}
+
+        .container {
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .box {
+            margin: 5px 0;
+        }
+
         .btn {
             display: inline-block;
             padding: 12px 30px;
@@ -111,24 +119,24 @@
             font-size: 0.9rem;
             box-shadow: var(--shadow);
         }
-        
+
         .btn:hover {
             background: var(--primary-dark);
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
-        
+
         .btn-secondary {
             background: transparent;
             border: 2px solid var(--primary);
             color: var(--primary);
         }
-        
+
         .btn-secondary:hover {
             background: var(--primary);
             color: var(--light);
         }
-        
+
         /* Header */
         header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
@@ -138,12 +146,12 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         header .container {
             position: relative;
             z-index: 2;
         }
-        
+
         header:before {
             content: '';
             position: absolute;
@@ -154,14 +162,14 @@
             background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCAwIEwxMDAgMCBMMTAwIDEwMCBMMCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9zdmc+');
             opacity: 0.1;
         }
-        
+
         .logo-container {
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 20px;
         }
-        
+
         .logo {
             width: 80px;
             height: 80px;
@@ -173,17 +181,17 @@
             margin-right: 15px;
             box-shadow: var(--shadow);
         }
-        
+
         .logo i {
             font-size: 40px;
             color: var(--primary);
         }
-        
+
         .header-title {
             font-size: 2.8rem;
             margin-bottom: 10px;
         }
-        
+
         .header-subtitle {
             font-size: 1.2rem;
             margin-bottom: 30px;
@@ -191,63 +199,63 @@
             margin-left: auto;
             margin-right: auto;
         }
-        
+
         .header-buttons {
             display: flex;
             gap: 15px;
             justify-content: center;
             margin-top: 30px;
         }
-        
+
         /* Sections */
         section {
             padding: 80px 0;
         }
-        
+
         section:nth-child(even) {
             background-color: var(--gray);
         }
-        
+
         .section-header {
             text-align: center;
             margin-bottom: 60px;
         }
-        
+
         .section-description {
             max-width: 800px;
             margin: 0 auto 40px;
             text-align: center;
         }
-        
+
         /* About */
         .about-content {
             display: flex;
             align-items: center;
             gap: 50px;
         }
-        
+
         .about-text {
             flex: 1;
         }
-        
+
         .about-image {
             flex: 1;
             text-align: center;
         }
-        
+
         .about-image img {
             max-width: 100%;
             border-radius: 10px;
             box-shadow: var(--shadow);
         }
-        
+
         /* Features */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-        
+
         .feature-card {
             background: var(--light);
             padding: 30px;
@@ -256,85 +264,87 @@
             transition: var(--transition);
             text-align: center;
         }
-        
+
         .feature-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
-        
+
         .feature-icon {
             font-size: 40px;
             color: var(--primary);
             margin-bottom: 20px;
         }
-        
+
         .feature-title {
             font-size: 1.4rem;
             margin-bottom: 15px;
         }
-        
+
         /* Problem Solution */
         .problem-solution {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
         }
-        
-        .problem, .solution {
+
+        .problem,
+        .solution {
             background: var(--light);
             padding: 30px;
             border-radius: 10px;
             box-shadow: var(--shadow);
         }
-        
-        .problem-title, .solution-title {
+
+        .problem-title,
+        .solution-title {
             color: var(--primary);
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        
+
         .problem-title i {
             color: #ff4d4d;
         }
-        
+
         .solution-title i {
             color: #4caf50;
         }
-        
+
         /* Product Showcase */
         .product-showcase {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        
+
         .product-image {
             max-width: 600px;
             margin-bottom: 40px;
             text-align: center;
         }
-        
+
         .product-image img {
             max-width: 100%;
             border-radius: 10px;
             box-shadow: var(--shadow);
         }
-        
+
         .product-features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
             width: 100%;
         }
-        
+
         /* Pricing */
         .pricing-cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-        
+
         .pricing-card {
             background: var(--light);
             padding: 40px 30px;
@@ -345,12 +355,12 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .pricing-card.popular {
             border: 2px solid var(--primary);
             transform: scale(1.05);
         }
-        
+
         .pricing-card.popular:before {
             content: 'MAIS POPULAR';
             position: absolute;
@@ -363,43 +373,43 @@
             font-weight: 600;
             transform: rotate(45deg);
         }
-        
+
         .price {
             font-size: 2.5rem;
             font-weight: 700;
             color: var(--primary);
             margin: 20px 0;
         }
-        
+
         .price span {
             font-size: 1rem;
             font-weight: 400;
         }
-        
+
         .pricing-features {
             list-style: none;
             margin: 20px 0;
             text-align: left;
         }
-        
+
         .pricing-features li {
             margin-bottom: 10px;
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        
+
         .pricing-features li i {
             color: #4caf50;
         }
-        
+
         /* Testimonials */
         .testimonials-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-        
+
         .testimonial {
             background: var(--light);
             padding: 30px;
@@ -407,7 +417,7 @@
             box-shadow: var(--shadow);
             position: relative;
         }
-        
+
         .testimonial:before {
             content: '"';
             font-size: 60px;
@@ -417,18 +427,18 @@
             left: 20px;
             line-height: 1;
         }
-        
+
         .testimonial-text {
             margin-bottom: 20px;
             font-style: italic;
         }
-        
+
         .testimonial-author {
             display: flex;
             align-items: center;
             gap: 15px;
         }
-        
+
         .author-image {
             width: 50px;
             height: 50px;
@@ -440,20 +450,20 @@
             font-size: 20px;
             color: var(--primary);
         }
-        
+
         /* FAQ */
         .faq-container {
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .faq-item {
             margin-bottom: 20px;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: var(--shadow);
         }
-        
+
         .faq-question {
             background: var(--light);
             padding: 20px;
@@ -463,7 +473,7 @@
             align-items: center;
             font-weight: 600;
         }
-        
+
         .faq-answer {
             background: var(--light);
             padding: 0 20px;
@@ -471,138 +481,148 @@
             overflow: hidden;
             transition: max-height 0.3s ease;
         }
-        
+
         .faq-answer.open {
             padding: 20px;
             max-height: 300px;
         }
-        
+
         /* Footer */
         footer {
             background: var(--dark);
             color: var(--light);
             padding: 60px 0 30px;
         }
-        
+
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
             margin-bottom: 40px;
         }
-        
+
         .footer-column h3 {
             color: var(--light);
             margin-bottom: 20px;
             font-size: 1.2rem;
         }
-        
+
         .footer-links {
             list-style: none;
         }
-        
+
         .footer-links li {
             margin-bottom: 10px;
         }
-        
+
         .footer-links a {
             color: var(--gray);
             transition: var(--transition);
         }
-        
+
         .footer-links a:hover {
             color: var(--primary-light);
         }
-        
+
         .social-links {
             display: flex;
             gap: 15px;
             margin-top: 20px;
         }
-        
+
         .social-links a {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 40px;
             height: 40px;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             color: var(--light);
             transition: var(--transition);
         }
-        
+
         .social-links a:hover {
             background: var(--primary);
             transform: translateY(-3px);
         }
-        
+
         .footer-bottom {
             text-align: center;
             padding-top: 30px;
-            border-top: 1px solid rgba(255,255,255,0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             font-size: 0.9rem;
             color: var(--gray-dark);
         }
-        
+
         /* Responsive */
         @media (max-width: 992px) {
             .about-content {
                 flex-direction: column;
             }
-            
+
             .problem-solution {
                 grid-template-columns: 1fr;
             }
-            
+
             .header-title {
                 font-size: 2.2rem;
             }
         }
-        
+
         @media (max-width: 768px) {
             section {
                 padding: 60px 0;
             }
-            
+
             .header-buttons {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             .header-buttons .btn {
                 width: 100%;
                 max-width: 300px;
                 margin-bottom: 10px;
             }
-            
+
             h1 {
                 font-size: 2.2rem;
             }
-            
+
             h2 {
                 font-size: 1.8rem;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
-<header style="background: linear-gradient(135deg, #f4a0c2, #ed9bb6); padding:60px 20px; text-align:center; color:#fff;">
-  <div class="logo-container" style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
-    <img src="assets/GuardiaLogoBranco.png" alt="Logo GuardIA" style="width:280px; height:auto; margin-bottom:10px;">
-    <h1 style="font-size:40px; margin:0; color:#fff;">GuardIA</h1>
-  </div>
+    <header
+        style="background: linear-gradient(135deg, #f4a0c2, #ed9bb6); padding:60px 20px; text-align:center; color:#fff;">
+        <div class="logo-container"
+            style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+            <img src="assets/GuardiaLogoBranco.png" alt="Logo GuardIA"
+                style="width:280px; height:auto; margin-bottom:10px;">
+            <h1 style="font-size:40px; margin:0; color:#fff;">GuardIA</h1>
+        </div>
 
-  <p class="header-subtitle" style="font-size:16px; max-width:700px; margin:25px auto; line-height:1.6;">
-    Sistema inteligente de segurança pessoal com IA integrada para proteção de mulheres, crianças e grupos vulneráveis
-  </p>
+        <p class="header-subtitle" style="font-size:16px; max-width:700px; margin:25px auto; line-height:1.6;">
+            Sistema inteligente de segurança pessoal com IA integrada para proteção de mulheres, crianças e grupos
+            vulneráveis
+        </p>
 
-  <div class="header-buttons" style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-top:20px;">
-    <a href="assets/GuardiaProtótipo.apk" class="btn" style="padding:12px 28px; background:#fff; color:#ed83a6; font-weight:600; border-radius:25px; box-shadow:0 6px 15px rgba(0,0,0,0.1);">Baixar App</a>
-    <a href="#premium" class="btn btn-secondary" style="padding:12px 28px; background:rgba(255,255,255,0.2); color:#fff; font-weight:600; border-radius:25px; box-shadow:0 6px 15px rgba(0,0,0,0.1);">Conhecer Planos</a>
-  </div>
-</header>
+        <div class="header-buttons"
+            style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-top:20px;">
+            <a href="assets/GuardiaProtótipo.apk" class="btn"
+                style="padding:12px 28px; background:#fff; color:#ed83a6; font-weight:600; border-radius:25px; box-shadow:0 6px 15px rgba(0,0,0,0.1);">Baixar
+                App</a>
+            <a href="#premium" class="btn btn-secondary"
+                style="padding:12px 28px; background:rgba(255,255,255,0.2); color:#fff; font-weight:600; border-radius:25px; box-shadow:0 6px 15px rgba(0,0,0,0.1);">Conhecer
+                Planos</a>
+        </div>
+    </header>
 
     <!-- About Section -->
     <section id="about">
@@ -612,9 +632,16 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>O GuardIA é um sistema completo de segurança pessoal que combina um dispositivo eletrônico portátil em formato de colar/pingente com um aplicativo móvel inteligente. Desenvolvido para proteger mulheres, crianças e grupos vulneráveis, o sistema oferece recursos avançados como botão de pânico, gravação de áudio, histórico de rotas e monitoramento em tempo real.</p>
-                    <p>Com design discreto e elegante, o GuardIA foi criado para ser utilizado no dia a dia, proporcionando segurança sem abrir mão do estilo. A integração com inteligência artificial permite análise de dados em tempo real, sugerindo rotas seguras e priorizando respostas em situações de emergência.</p>
-                    <p>Nosso objetivo é empoderar mulheres e oferecer tranquilidade para famílias, criando uma rede de proteção colaborativa que une tecnologia, prevenção e ação rápida.</p>
+                    <p>O GuardIA é um sistema completo de segurança pessoal que combina um dispositivo eletrônico
+                        portátil em formato de colar/pingente com um aplicativo móvel inteligente. Desenvolvido para
+                        proteger mulheres, crianças e grupos vulneráveis, o sistema oferece recursos avançados como
+                        botão de pânico, gravação de áudio, histórico de rotas e monitoramento em tempo real.</p>
+                    <p>Com design discreto e elegante, o GuardIA foi criado para ser utilizado no dia a dia,
+                        proporcionando segurança sem abrir mão do estilo. A integração com inteligência artificial
+                        permite análise de dados em tempo real, sugerindo rotas seguras e priorizando respostas em
+                        situações de emergência.</p>
+                    <p>Nosso objetivo é empoderar mulheres e oferecer tranquilidade para famílias, criando uma rede de
+                        proteção colaborativa que une tecnologia, prevenção e ação rápida.</p>
                 </div>
                 <div class="about-image">
                     <img src="assets/Slogan.png" alt="Dispositivo GuardIA">
@@ -632,14 +659,17 @@
             <div class="problem-solution">
                 <div class="problem">
                     <h3 class="problem-title"><i class="fas fa-exclamation-circle"></i> O Problema</h3>
-                    <p>A violência contra mulheres, crianças e grupos vulneráveis é uma triste realidade em nossa sociedade. Dados mostram que:</p>
+                    <p>A violência contra mulheres, crianças e grupos vulneráveis é uma triste realidade em nossa
+                        sociedade. Dados mostram que:</p>
                     <ul>
                         <li>Uma mulher é agredida a cada 4 minutos no Brasil</li>
                         <li>O assédio em espaços públicos afeta 86% das mulheres</li>
                         <li>Pais e responsáveis enfrentam crescente preocupação com a segurança de crianças</li>
-                        <li>Falta um sistema integrado de proteção que una prevenção, ação rápida e suporte comunitário</li>
+                        <li>Falta um sistema integrado de proteção que una prevenção, ação rápida e suporte comunitário
+                        </li>
                     </ul>
-                    <p>As soluções existentes são frequentemente limitadas, não integradas ou de difícil acesso, deixando lacunas na proteção de quem mais precisa.</p>
+                    <p>As soluções existentes são frequentemente limitadas, não integradas ou de difícil acesso,
+                        deixando lacunas na proteção de quem mais precisa.</p>
                 </div>
                 <div class="solution">
                     <h3 class="solution-title"><i class="fas fa-check-circle"></i> Nossa Solução</h3>
@@ -652,7 +682,8 @@
                         <li>Monitoramento infantil para pais e responsáveis</li>
                         <li>Sistema de gravação e armazenamento seguro de evidências</li>
                     </ul>
-                    <p>Esta combinação única de hardware, software e comunidade cria um ecossistema completo de proteção.</p>
+                    <p>Esta combinação única de hardware, software e comunidade cria um ecossistema completo de
+                        proteção.</p>
                 </div>
             </div>
         </div>
@@ -670,264 +701,273 @@
                         <i class="fas fa-bell"></i>
                     </div>
                     <h3 class="feature-title">Botão de Pânico</h3>
-                    <p>Acionamento instantâneo que envia alertas para contatos de confiança com localização em tempo real, histórico de rotas e gravação de áudio.</p>
+                    <p>Acionamento instantâneo que envia alertas para contatos de confiança com localização em tempo
+                        real, histórico de rotas e gravação de áudio.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-microphone"></i>
                     </div>
                     <h3 class="feature-title">Gravação de Áudio</h3>
-                    <p>Capture áudio ambiente com qualidade para servir como prova em situações de risco. Armazenamento seguro com acesso controlado pela usuária.</p>
+                    <p>Capture áudio ambiente com qualidade para servir como prova em situações de risco. Armazenamento
+                        seguro com acesso controlado pela usuária.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-route"></i>
                     </div>
                     <h3 class="feature-title">Histórico de Rotas</h3>
-                    <p>Registro personalizável de trajetos percorridos, compartilhável com contatos de confiança em caso de emergência.</p>
+                    <p>Registro personalizável de trajetos percorridos, compartilhável com contatos de confiança em caso
+                        de emergência.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-child"></i>
                     </div>
                     <h3 class="feature-title">Monitoramento Infantil</h3>
-                    <p>Acompanhe a localização e rotas de crianças e dependentes, com alertas personalizáveis e check-ins automáticos.</p>
+                    <p>Acompanhe a localização e rotas de crianças e dependentes, com alertas personalizáveis e
+                        check-ins automáticos.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-users"></i>
                     </div>
                     <h3 class="feature-title">Rede Colaborativa</h3>
-                    <p>Comunidade de usuários que compartilham alertas anônimos sobre áreas de risco, criando um mapa de segurança coletivo.</p>
+                    <p>Comunidade de usuários que compartilham alertas anônimos sobre áreas de risco, criando um mapa de
+                        segurança coletivo.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-brain"></i>
                     </div>
                     <h3 class="feature-title">Inteligência Artificial</h3>
-                    <p>Algoritmos que analisam padrões, sugerem rotas seguras e priorizam respostas com base em dados em tempo real.</p>
+                    <p>Algoritmos que analisam padrões, sugerem rotas seguras e priorizam respostas com base em dados em
+                        tempo real.</p>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Seção de Informações Técnicas -->
-<section class="info-tecnica">
-    <h2>Informações Técnicas</h2>
-    <div class="tecnica-container">
-        <div class="tecnica-card">
-            <div class="tecnica-icon">
-                <i class="fas fa-microchip"></i>
-            </div>
-            <h3>Especificações do Hardware</h3>
-            <div class="tecnica-content">
-                <div class="tecnica-item">
-                    <h4>Dispositivo Portátil (Chaveiro)</h4>
-                    <ul>
-                        <li><strong>Bateria:</strong> Recarregável via USB-C</li>
-                        <li><strong>Autonomia:</strong> 24-48 horas (uso intenso)</li>
-                        <li><strong>Tempo de recarga:</strong> Aproximadamente 6 horas</li>
-                        <li><strong>Conectividade:</strong> Bluetooth Low Energy (BLE) e Internet móvel</li>
-                        <li><strong>Botões multifuncionais:</strong> Pânico, gravação de áudio e histórico de rotas</li>
-                    </ul>
+    <!-- Seção de Informações Técnicas -->
+    <section class="info-tecnica">
+        <h2>Informações Técnicas</h2>
+        <div class="tecnica-container">
+            <div class="tecnica-card">
+                <div class="tecnica-icon">
+                    <i class="fas fa-microchip"></i>
                 </div>
-                
-                <div class="tecnica-item">
-                    <h4>Colar/Pingente</h4>
-                    <ul>
-                        <li><strong>Bateria:</strong> CR2032 (ou similar) - não recarregável</li>
-                        <li><strong>Autonomia:</strong> 3+ anos - filosofia "esqueça e use"</li>
-                        <li><strong>Materiais:</strong> Impressão 3D, cordão antialérgico</li>
-                        <li><strong>Cores disponíveis:</strong> Prata e dourado</li>
-                        <li><strong>Design:</strong> Pingente oval discreto com botão floral central</li>
-                    </ul>
-                </div>
-                
-                <div class="tecnica-item">
-                    <h4>Comunicação e Segurança</h4>
-                    <ul>
-                        <li><strong>Protocolo:</strong> Bluetooth Low Energy com pareamento seguro</li>
-                        <li><strong>Criptografia:</strong> Conexão privada e criptografada exclusiva</li>
-                        <li><strong>Proteção:</strong> Impede conexões de terceiros não autorizados</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <div class="tecnica-card">
-            <div class="tecnica-icon">
-                <i class="fas fa-mobile-alt"></i>
-            </div>
-            <h3>Especificações do Software</h3>
-            <div class="tecnica-content">
-                <div class="tecnica-item">
-                    <h4>Aplicativo Móvel</h4>
-                    <ul>
-                        <li><strong>Tecnologias:</strong> HTML, CSS, JavaScript, Python, SQL</li>
-                        <li><strong>Consumo de dados:</strong> 5-15 MB/dia</li>
-                        <li><strong>Funcionalidades principais:</strong> Mapa interativo, alertas, rede colaborativa</li>
-                        <li><strong>Compatibilidade:</strong> iOS e Android</li>
-                    </ul>
-                </div>
-                
-                <div class="tecnica-item">
-                    <h4>Recursos de Áudio</h4>
-                    <ul>
-                        <li><strong>Faixa de captura:</strong> 20 Hz a 20 kHz</li>
-                        <li><strong>Armazenamento:</strong> Banco de dados seguro</li>
-                        <li><strong>Controle:</strong> Acesso, exclusão e compartilhamento pela usuária</li>
-                    </ul>
-                </div>
-                
-                <div class="tecnica-item">
-                    <h4>Modos de Operação</h4>
-                    <ul>
-                        <li><strong>Modo Segurança em Casa:</strong> Check-in automático com alertas</li>
-                        <li><strong>Proteção GuardIA ao Redor:</strong> Alertas para usuárias em 1km de raio</li>
-                        <li><strong>Modo Infantil:</strong> Monitoramento de dependentes</li>
-                        <li><strong>Procurar GuardIA:</strong> Alarme sonoro para localizar dispositivo</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <div class="tecnica-card">
-            <div class="tecnica-icon">
-                <i class="fas fa-shield-alt"></i>
-            </div>
-            <h3>Segurança e Privacidade</h3>
-            <div class="tecnica-content">
-                <div class="tecnica-item">
-                    <h4>Proteção de Dados</h4>
-                    <ul>
-                        <li><strong>Conformidade:</strong> LGPD (Lei Geral de Proteção de Dados)</li>
-                        <li><strong>Transparência:</strong> Consentimento explícito para cada finalidade</li>
-                        <li><strong>Controle:</strong> Exclusão de dados solicitável a qualquer momento</li>
-                        <li><strong>Anonimato:</strong> Identidade preservada no fórum colaborativo</li>
-                    </ul>
-                </div>
-                
-                <div class="tecnica-item">
-                    <h4>Sistema de Alertas</h4>
-                    <ul>
-                        <li><strong>Canais:</strong> SMS, e-mail, WhatsApp, mensagem direta</li>
-                        <li><strong>Redundância:</strong> Múltiplos canais para evitar falhas</li>
-                        <li><strong>Offline:</strong> Funcionamento sem internet via SMS de emergência</li>
-                        <li><strong>Informações incluídas:</strong> Nome, idade, localização, histórico de rotas, áudio</li>
-                    </ul>
-                </div>
-                
-                <div class="tecnica-item">
-                    <h4>Personalização</h4>
-                    <ul>
-                        <li><strong>Interface:</strong> Customizável (modo escuro, monocromático, etc.)</li>
-                        <li><strong>Contatos de emergência:</strong> 1 a 5 contatos configuráveis</li>
-                        <li><strong>Histórico de rotas:</strong> Intervalos de registro personalizáveis</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                <h3>Especificações do Hardware</h3>
+                <div class="tecnica-content">
+                    <div class="tecnica-item">
+                        <h4>Dispositivo Portátil (Chaveiro)</h4>
+                        <ul>
+                            <li><strong>Bateria:</strong> Recarregável via USB-C</li>
+                            <li><strong>Autonomia:</strong> 24-48 horas (uso intenso)</li>
+                            <li><strong>Tempo de recarga:</strong> Aproximadamente 6 horas</li>
+                            <li><strong>Conectividade:</strong> Bluetooth Low Energy (BLE) e Internet móvel</li>
+                            <li><strong>Botões multifuncionais:</strong> Pânico, gravação de áudio e histórico de rotas
+                            </li>
+                        </ul>
+                    </div>
 
-<style>
-    /* Estilos para a seção de informações técnicas */
-    .info-tecnica {
-        padding: 60px 20px;
-        background: #f9f9f9;
-    }
-    
-    .info-tecnica h2 {
-        text-align: center;
-        font-size: 32px;
-        color: #e91e63;
-        margin-bottom: 40px;
-    }
-    
-    .tecnica-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    
-    .tecnica-card {
-        background: white;
-        border-radius: 15px;
-        padding: 30px;
-        width: 100%;
-        max-width: 380px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
-    }
-    
-    .tecnica-card:hover {
-        transform: translateY(-5px);
-    }
-    
-    .tecnica-icon {
-        font-size: 40px;
-        color: #e91e63;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .tecnica-card h3 {
-        color: #333;
-        text-align: center;
-        margin-bottom: 25px;
-        font-size: 22px;
-    }
-    
-    .tecnica-item {
-        margin-bottom: 25px;
-    }
-    
-    .tecnica-item h4 {
-        color: #e91e63;
-        margin-bottom: 10px;
-        font-size: 18px;
-    }
-    
-    .tecnica-item ul {
-        list-style: none;
-        padding: 0;
-    }
-    
-    .tecnica-item li {
-        padding: 5px 0;
-        color: #555;
-        line-height: 1.5;
-        position: relative;
-        padding-left: 20px;
-    }
-    
-    .tecnica-item li:before {
-        content: "•";
-        color: #e91e63;
-        font-weight: bold;
-        position: absolute;
-        left: 0;
-    }
-    
-    .tecnica-item strong {
-        color: #333;
-    }
-    
-    /* Responsividade */
-    @media (max-width: 768px) {
+                    <div class="tecnica-item">
+                        <h4>Colar/Pingente</h4>
+                        <ul>
+                            <li><strong>Bateria:</strong> CR2032 (ou similar) - não recarregável</li>
+                            <li><strong>Autonomia:</strong> 3+ anos - filosofia "esqueça e use"</li>
+                            <li><strong>Materiais:</strong> Impressão 3D, cordão antialérgico</li>
+                            <li><strong>Cores disponíveis:</strong> Prata e dourado</li>
+                            <li><strong>Design:</strong> Pingente oval discreto com botão floral central</li>
+                        </ul>
+                    </div>
+
+                    <div class="tecnica-item">
+                        <h4>Comunicação e Segurança</h4>
+                        <ul>
+                            <li><strong>Protocolo:</strong> Bluetooth Low Energy com pareamento seguro</li>
+                            <li><strong>Criptografia:</strong> Conexão privada e criptografada exclusiva</li>
+                            <li><strong>Proteção:</strong> Impede conexões de terceiros não autorizados</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tecnica-card">
+                <div class="tecnica-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Especificações do Software</h3>
+                <div class="tecnica-content">
+                    <div class="tecnica-item">
+                        <h4>Aplicativo Móvel</h4>
+                        <ul>
+                            <li><strong>Tecnologias:</strong> HTML, CSS, JavaScript, Python, SQL</li>
+                            <li><strong>Consumo de dados:</strong> 5-15 MB/dia</li>
+                            <li><strong>Funcionalidades principais:</strong> Mapa interativo, alertas, rede colaborativa
+                            </li>
+                            <li><strong>Compatibilidade:</strong> iOS e Android</li>
+                        </ul>
+                    </div>
+
+                    <div class="tecnica-item">
+                        <h4>Recursos de Áudio</h4>
+                        <ul>
+                            <li><strong>Faixa de captura:</strong> 20 Hz a 20 kHz</li>
+                            <li><strong>Armazenamento:</strong> Banco de dados seguro</li>
+                            <li><strong>Controle:</strong> Acesso, exclusão e compartilhamento pela usuária</li>
+                        </ul>
+                    </div>
+
+                    <div class="tecnica-item">
+                        <h4>Modos de Operação</h4>
+                        <ul>
+                            <li><strong>Modo Segurança em Casa:</strong> Check-in automático com alertas</li>
+                            <li><strong>Proteção GuardIA ao Redor:</strong> Alertas para usuárias em 1km de raio</li>
+                            <li><strong>Modo Infantil:</strong> Monitoramento de dependentes</li>
+                            <li><strong>Procurar GuardIA:</strong> Alarme sonoro para localizar dispositivo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tecnica-card">
+                <div class="tecnica-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Segurança e Privacidade</h3>
+                <div class="tecnica-content">
+                    <div class="tecnica-item">
+                        <h4>Proteção de Dados</h4>
+                        <ul>
+                            <li><strong>Conformidade:</strong> LGPD (Lei Geral de Proteção de Dados)</li>
+                            <li><strong>Transparência:</strong> Consentimento explícito para cada finalidade</li>
+                            <li><strong>Controle:</strong> Exclusão de dados solicitável a qualquer momento</li>
+                            <li><strong>Anonimato:</strong> Identidade preservada no fórum colaborativo</li>
+                        </ul>
+                    </div>
+
+                    <div class="tecnica-item">
+                        <h4>Sistema de Alertas</h4>
+                        <ul>
+                            <li><strong>Canais:</strong> SMS, e-mail, WhatsApp, mensagem direta</li>
+                            <li><strong>Redundância:</strong> Múltiplos canais para evitar falhas</li>
+                            <li><strong>Offline:</strong> Funcionamento sem internet via SMS de emergência</li>
+                            <li><strong>Informações incluídas:</strong> Nome, idade, localização, histórico de rotas,
+                                áudio</li>
+                        </ul>
+                    </div>
+
+                    <div class="tecnica-item">
+                        <h4>Personalização</h4>
+                        <ul>
+                            <li><strong>Interface:</strong> Customizável (modo escuro, monocromático, etc.)</li>
+                            <li><strong>Contatos de emergência:</strong> 1 a 5 contatos configuráveis</li>
+                            <li><strong>Histórico de rotas:</strong> Intervalos de registro personalizáveis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Estilos para a seção de informações técnicas */
+        .info-tecnica {
+            padding: 60px 20px;
+            background: #f9f9f9;
+        }
+
+        .info-tecnica h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #e91e63;
+            margin-bottom: 40px;
+        }
+
         .tecnica-container {
-            flex-direction: column;
-            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        
+
         .tecnica-card {
-            max-width: 100%;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            width: 100%;
+            max-width: 380px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
-    }
-</style>
+
+        .tecnica-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tecnica-icon {
+            font-size: 40px;
+            color: #e91e63;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .tecnica-card h3 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 22px;
+        }
+
+        .tecnica-item {
+            margin-bottom: 25px;
+        }
+
+        .tecnica-item h4 {
+            color: #e91e63;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .tecnica-item ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tecnica-item li {
+            padding: 5px 0;
+            color: #555;
+            line-height: 1.5;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .tecnica-item li:before {
+            content: "•";
+            color: #e91e63;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .tecnica-item strong {
+            color: #333;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .tecnica-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tecnica-card {
+                max-width: 100%;
+            }
+        }
+    </style>
 
     <!-- Product Showcase Section -->
     <section>
@@ -942,15 +982,18 @@
                 <div class="product-features">
                     <div class="feature-card">
                         <h3 class="feature-title">Design Discreto</h3>
-                        <p>Pingente elegante em formato de flor que não chama atenção, mas oferece proteção quando mais precisa.</p>
+                        <p>Pingente elegante em formato de flor que não chama atenção, mas oferece proteção quando mais
+                            precisa.</p>
                     </div>
                     <div class="feature-card">
                         <h3 class="feature-title">Fácil de Usar</h3>
-                        <p>Botões intuitivos para pânico, gravação e histórico de rotas, com feedback tátil para confirmação.</p>
+                        <p>Botões intuitivos para pânico, gravação e histórico de rotas, com feedback tátil para
+                            confirmação.</p>
                     </div>
                     <div class="feature-card">
                         <h3 class="feature-title">Conexão Imediata</h3>
-                        <p>Número de série único que conecta automaticamente o hardware ao aplicativo sem configuração complexa.</p>
+                        <p>Número de série único que conecta automaticamente o hardware ao aplicativo sem configuração
+                            complexa.</p>
                     </div>
                 </div>
             </div>
@@ -958,193 +1001,199 @@
     </section>
 
     <!-- Seção de Premiações -->
-<section class="premios">
-    <h2>Nossas Conquistas</h2>
-    <div class="premios-container">
-        <!-- Card 1 - Menção Honrosa -->
-        <div class="premio-card">
-            <div class="premio-icon">
-                <img src="assets/obt.png.png" alt="Dispositivo GuardIA" style="width:380px; height:auto; margin-bottom:15px;">
+    <section class="premios">
+        <h2>Nossas Conquistas</h2>
+        <div class="premios-container">
+            <!-- Card 1 - Menção Honrosa -->
+            <div class="premio-card">
+                <div class="premio-icon">
+                    <img src="assets/obt.png.png" alt="Dispositivo GuardIA"
+                        style="width:380px; height:auto; margin-bottom:15px;">
+                </div>
+                <h3>Menção Honrosa - Olimpíada Brasileira de Tecnologia</h3>
+                <p>Mesmo em sua versão inicial sem muitos recursos e não desenvolvida, a ideia do aplicativo foi reconhecida com menção honrosa na Olimpíada Brasileira de Tecnologia 2025.</p>
             </div>
-            <h3>Menção Honrosa - Olimpíada Brasileira de Tecnologia</h3>
-            <p>Nosso projeto foi reconhecido com Menção Honrosa na Olimpíada Brasileira de Tecnologia, destacando-se pela inovação e impacto social na área de segurança pessoal.</p>
-        </div>
 
-        <!-- Card 2 - Prêmio Desafio do App -->
-        <div class="premio-card">
-            <div class="premio-icon">
-                <img src="assets/DesafioAPP (2).png" alt="Dispositivo GuardIA" style="width:380px; height:auto; margin-bottom:15px;">
+            <!-- Card 2 - Prêmio Desafio do App -->
+            <div class="premio-card">
+                <div class="premio-icon">
+                    <img src="assets/DesafioAPP (2).png" alt="Dispositivo GuardIA"
+                        style="width:380px; height:auto; margin-bottom:15px;">
+                </div>
+                <h3>Prêmio Desafio do App - Categoria Segurança</h3>
+                <p>Embora a versão atual do aplicativo seja inédita e completamente aprimorada, oferecemos como referência, o APK do app anterior, ganhador do prêmio Desafio do APP na OBT 2025 na categoria "Segurança"</p>
             </div>
-            <h3>Prêmio Desafio do App - Categoria Segurança</h3>
-            <p>Nossa versão disponível em APK foi premiada no Desafio de Apps na categoria de Segurança, reconhecendo a eficiência e inovação do GuardIA na proteção de usuários.</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Seção de Produtos -->
-<section class="produtos">
-    <h2>Nossos Produtos</h2>
-    <div class="produtos-container">
-        <!-- Card 1 - Dispositivo -->
-        <div class="produto-card">
-            <div class="produto-imagem">
-                <img src="assets/DispositivoGuardia.png.png" alt="Dispositivo GuardIA">
+    <!-- Seção de Produtos -->
+    <section class="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos-container">
+            <!-- Card 1 - Dispositivo -->
+            <div class="produto-card">
+                <div class="produto-imagem">
+                    <img src="assets/DispositivoGuardia.png.png" alt="Dispositivo GuardIA">
+                </div>
+                <h3>Dispositivo GuardIA</h3>
+                <p>Dispositivo portátil e discreto com botão de pânico, gravação de áudio e histórico de rotas
+                    integrado.</p>
             </div>
-            <h3>Dispositivo GuardIA</h3>
-            <p>Dispositivo portátil e discreto com botão de pânico, gravação de áudio e histórico de rotas integrado.</p>
-        </div>
 
-        <!-- Card 2 - Colar -->
-        <div class="produto-card">
-            <div class="produto-imagem">
-                <img src="assets/ColarDourado.png" alt="Colar GuardIA">
+            <!-- Card 2 - Colar -->
+            <div class="produto-card">
+                <div class="produto-imagem">
+                    <img src="assets/ColarDourado.png" alt="Colar GuardIA">
+                </div>
+                <h3>Colar GuardIA (modelo dourado)</h3>
+                <p>Design elegante em formato de pingente com todos os recursos de segurança do dispositivo GuardIA em
+                    cor dourada com cordão anti-alergênico.</p>
             </div>
-            <h3>Colar GuardIA (modelo dourado)</h3>
-            <p>Design elegante em formato de pingente com todos os recursos de segurança do dispositivo GuardIA em cor dourada com cordão anti-alergênico.</p>
-        </div>
 
-        <!-- Card 3 - Acessórios -->
-        <div class="produto-card">
-            <div class="produto-imagem">
-                <img src="assets/PrataGuardia.png" alt="Acessórios GuardIA">
+            <!-- Card 3 - Acessórios -->
+            <div class="produto-card">
+                <div class="produto-imagem">
+                    <img src="assets/PrataGuardia.png" alt="Acessórios GuardIA">
+                </div>
+                <h3>Colar GuardIA (modelo prata)</h3>
+                <p>Design sofisticado em formato de pingente com todos os recursos de segurança do dispositivo GuardIA
+                    em cor prata com cordão anti-alergênico.</p>
             </div>
-            <h3>Colar GuardIA (modelo prata)</h3>
-            <p>Design sofisticado em formato de pingente com todos os recursos de segurança do dispositivo GuardIA em cor prata com cordão anti-alergênico.</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<style>
-    /* Estilos para a seção de prêmios */
-    .premios {
-        padding: 60px 20px;
-        background: #f9f9f9;
-        text-align: center;
-    }
-    
-    .premios h2 {
-        font-size: 32px;
-        color: #e91e63;
-        margin-bottom: 40px;
-    }
-    
-    .premios-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 30px;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    
-    .premio-card {
-        background: white;
-        border-radius: 15px;
-        padding: 30px;
-        width: 100%;
-        max-width: 450px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
-    }
-    
-    .premio-card:hover {
-        transform: translateY(-5px);
-    }
-    
-    .premio-icon {
-        font-size: 40px;
-        color: #e91e63;
-        margin-bottom: 20px;
-    }
-    
-    .premio-card h3 {
-        color: #333;
-        margin-bottom: 12px;
-        font-size: 20px;
-    }
-    
-    .premio-card p {
-        color: #666;
-        line-height: 1.6;
-    }
-    
-    /* Estilos para a seção de produtos */
-    .produtos {
-        padding: 60px 20px;
-        text-align: center;
-    }
-    
-    .produtos h2 {
-        font-size: 32px;
-        color: #e91e63;
-        margin-bottom: 40px;
-    }
-    
-    .produtos-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 30px;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    
-    .produto-card {
-        background: white;
-        border-radius: 15px;
-        overflow: hidden;
-        width: 100%;
-        max-width: 350px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
-    }
-    
-    .produto-card:hover {
-        transform: translateY(-5px);
-    }
-    
-    .produto-imagem {
-        height: 200px;
-        overflow: hidden;
-    }
-    
-    .produto-imagem img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-    }
-    
-    .produto-card:hover .produto-imagem img {
-        transform: scale(1.05);
-    }
-    
-    .produto-card h3 {
-        padding: 20px 20px 10px;
-        color: #333;
-        font-size: 22px;
-    }
-    
-    .produto-card p {
-        padding: 0 20px 20px;
-        color: #666;
-        line-height: 1.6;
-    }
-    
-    /* Responsividade */
-    @media (max-width: 768px) {
-        .premios-container,
+    <style>
+        /* Estilos para a seção de prêmios */
+        .premios {
+            padding: 60px 20px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .premios h2 {
+            font-size: 32px;
+            color: #e91e63;
+            margin-bottom: 40px;
+        }
+
+        .premios-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .premio-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .premio-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .premio-icon {
+            font-size: 40px;
+            color: #e91e63;
+            margin-bottom: 20px;
+        }
+
+        .premio-card h3 {
+            color: #333;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        .premio-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Estilos para a seção de produtos */
+        .produtos {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .produtos h2 {
+            font-size: 32px;
+            color: #e91e63;
+            margin-bottom: 40px;
+        }
+
         .produtos-container {
-            flex-direction: column;
-            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        
-        .premio-card,
+
         .produto-card {
-            max-width: 100%;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 350px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
-    }
-</style>
+
+        .produto-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .produto-imagem {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .produto-imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .produto-card:hover .produto-imagem img {
+            transform: scale(1.05);
+        }
+
+        .produto-card h3 {
+            padding: 20px 20px 10px;
+            color: #333;
+            font-size: 22px;
+        }
+
+        .produto-card p {
+            padding: 0 20px 20px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+
+            .premios-container,
+            .produtos-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .premio-card,
+            .produto-card {
+                max-width: 100%;
+            }
+        }
+    </style>
 
     <!-- Pricing Section -->
     <section id="premium">
@@ -1152,7 +1201,8 @@
             <div class="section-header">
                 <h2>Nossos Planos</h2>
             </div>
-            <p class="section-description">Escolha a opção que melhor se adapta às suas necessidades de segurança e orçamento.</p>
+            <p class="section-description">Escolha a opção que melhor se adapta às suas necessidades de segurança e
+                orçamento.</p>
             <div class="pricing-cards">
                 <div class="pricing-card">
                     <h3>Apenas App</h3>
@@ -1205,7 +1255,9 @@
             </div>
             <div class="testimonials-container">
                 <div class="testimonial">
-                    <p class="testimonial-text">"Projeto com potencial e funcionalidades para atender demandas de segurança e preservação não só de mulheres, mas também de idosos, pessoas LGBTQIAPN+ e crianças"</p>
+                    <p class="testimonial-text">"Projeto com potencial e funcionalidades para atender demandas de
+                        segurança e preservação não só de mulheres, mas também de idosos, pessoas LGBTQIAPN+ e crianças"
+                    </p>
                     <div class="testimonial-author">
                         <div class="author-image">
                             <i class="fas fa-user"></i>
@@ -1217,7 +1269,9 @@
                     </div>
                 </div>
                 <div class="testimonial">
-                    <p class="testimonial-text">"O projeto é altamente inovador, com grande potencial de impacto social e tecnológico. Servindo como uma ferramenta de segurança tanto para mulheres, quanto para pessoas LGBTQIAPN+"</p>
+                    <p class="testimonial-text">"O projeto é altamente inovador, com grande potencial de impacto social
+                        e tecnológico. Servindo como uma ferramenta de segurança tanto para mulheres, quanto para
+                        pessoas LGBTQIAPN+"</p>
                     <div class="testimonial-author">
                         <div class="author-image">
                             <i class="fas fa-user"></i>
@@ -1229,7 +1283,8 @@
                     </div>
                 </div>
                 <div class="testimonial">
-                    <p class="testimonial-text">"O projeto atende a necessidade e segurança das mulheres e outros grupos com grandes ferramentas incluídas em seu software e hardware"</p>
+                    <p class="testimonial-text">"O projeto atende a necessidade e segurança das mulheres e outros grupos
+                        com grandes ferramentas incluídas em seu software e hardware"</p>
                     <div class="testimonial-author">
                         <div class="author-image">
                             <i class="fas fa-user"></i>
@@ -1244,6 +1299,86 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>Principais avaliações do nosso público alvo:</h2>
+      </div>
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <p class="testimonial-text">"Eu acho brilhante, tão útil e realmente parece muito bom. Se isso existisse em meu país, eu com certeza compraria!"</p>
+          <div class="testimonial-author">
+            <div class="author-image"><i class="fas fa-user"></i></div>
+            <div class="author-info">
+              <h4>Andrea Gaftone</h4>
+              <p>Artista plástica, Bistrita-Nasaud (Romênia)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-text">"Colaboração, autonomia e cuidado são os conceitos fundamentais para combater a violência de gênero, felizmente são os pilares do projeto GuardIA."</p>
+          <div class="testimonial-author">
+            <div class="author-image"><i class="fas fa-user"></i></div>
+            <div class="author-info">
+              <h4>Clara Cuevas</h4>
+              <p>Historiadora SENAC, São Paulo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-text">"Me parece uma ideia super útil e necessária nos dias de hoje. Gosto da ideia de ser um pingente discreto com botão e de se conectar com o celular, o que torna muito prático. Acho interessante para cuidar de mulheres e meninas no dia a dia. Eu definitivamente usaria."</p>
+          <div class="testimonial-author">
+            <div class="author-image"><i class="fas fa-user"></i></div>
+            <div class="author-info">
+              <h4>Jenny Amador</h4>
+              <p>Estudante de nutrição, Tarragona (Espanha)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-text">"Acho a ideia interessante e se faz útil não somente para mulheres. Tenho uma criança com autismo, e poder saber onde ele está e como, me deixaria muito mais tranquila."</p>
+          <div class="testimonial-author">
+            <div class="author-image"><i class="fas fa-user"></i></div>
+            <div class="author-info">
+              <h4>Mara Souza</h4>
+              <p>Recepcionista, São Paulo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-text">"Acho o produto maravilhoso!"</p>
+          <div class="testimonial-author">
+            <div class="author-image"><i class="fas fa-user"></i></div>
+            <div class="author-info">
+              <h4>Midian Lima</h4>
+              <p>Farmacêutica, Mata Verde</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-text">"Muito interessante e super bem feito."</p>
+          <div class="testimonial-author">
+            <div class="author-image"><i class="fas fa-user"></i></div>
+            <div class="author-info">
+              <h4>Virgínia Alves</h4>
+              <p>Aposentada, Mata Verde</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+                    
+  
+
+
     <!-- FAQ Section -->
     <section>
         <div class="container">
@@ -1257,7 +1392,10 @@
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Cada dispositivo GuardIA possui um número de série único. Ao inserir este número no aplicativo, o sistema automaticamente vincula o hardware à sua conta, permitindo acesso gratuito e ilimitado a todos os recursos do app. Não é necessário pagar assinatura se você possui o dispositivo físico.</p>
+                        <p>Cada dispositivo GuardIA possui um número de série único. Ao inserir este número no
+                            aplicativo, o sistema automaticamente vincula o hardware à sua conta, permitindo acesso
+                            gratuito e ilimitado a todos os recursos do app. Não é necessário pagar assinatura se você
+                            possui o dispositivo físico.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1266,7 +1404,10 @@
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>O GuardIA foi projetado para funcionar mesmo sem conexão com a internet. Se o botão de pânico for acionado sem conexão, o sistema armazena localmente os dados e os envia automaticamente quando a conexão for restabelecida. Além disso, um SMS de emergência é enviado com as informações críticas mesmo sem internet.</p>
+                        <p>O GuardIA foi projetado para funcionar mesmo sem conexão com a internet. Se o botão de pânico
+                            for acionado sem conexão, o sistema armazena localmente os dados e os envia automaticamente
+                            quando a conexão for restabelecida. Além disso, um SMS de emergência é enviado com as
+                            informações críticas mesmo sem internet.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1275,7 +1416,10 @@
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Seguimos rigorosamente a LGPD (Lei Geral de Proteção de Dados). Todos os dados são criptografados, e você tem controle total sobre quais informações compartilhar. A rede colaborativa é anônima, e você pode solicitar a exclusão dos seus dados a qualquer momento através do aplicativo.</p>
+                        <p>Seguimos rigorosamente a LGPD (Lei Geral de Proteção de Dados). Todos os dados são
+                            criptografados, e você tem controle total sobre quais informações compartilhar. A rede
+                            colaborativa é anônima, e você pode solicitar a exclusão dos seus dados a qualquer momento
+                            através do aplicativo.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1284,7 +1428,9 @@
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>O dispositivo GuardIA possui autonomia de aproximadamente 24 horas com uso normal. A recarga completa leva cerca de 6 horas. O aplicativo inclui alertas de bateria fraca para que você nunca fique desprotegida.</p>
+                        <p>O dispositivo GuardIA possui autonomia de aproximadamente 24 horas com uso normal. A recarga
+                            completa leva cerca de 6 horas. O aplicativo inclui alertas de bateria fraca para que você
+                            nunca fique desprotegida.</p>
                     </div>
                 </div>
             </div>
@@ -1297,10 +1443,13 @@
             <div class="section-header">
                 <h2>Baixe o GuardIA</h2>
             </div>
-            <p class="section-description">Experimente nossa versão beta e descubra como o GuardIA pode aumentar sua segurança no dia a dia.</p>
+            <p class="section-description">Experimente nossa versão beta e descubra como o GuardIA pode aumentar sua
+                segurança no dia a dia.</p>
             <div style="text-align: center; margin-top: 40px;">
-                <a href="assets/GuardiaProtótipo.apk" class="btn"><i class="fas fa-download"></i> Baixar Versão Beta (APK)</a>
-                <p style="margin-top: 20px; font-size: 0.9rem;">Disponível em breve na Google Play Store e Apple App Store</p>
+                <a href="assets/GuardiaProtótipo.apk" class="btn"><i class="fas fa-download"></i> Baixar Versão Beta
+                    (APK)</a>
+                <p style="margin-top: 20px; font-size: 0.9rem;">Disponível em breve na Google Play Store e Apple App
+                    Store</p>
             </div>
         </div>
     </section>
@@ -1311,7 +1460,8 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>GuardIA</h3>
-                    <p>Sistema inteligente de segurança pessoal com IA integrada para proteção de mulheres, crianças e grupos vulneráveis.</p>
+                    <p>Sistema inteligente de segurança pessoal com IA integrada para proteção de mulheres, crianças e
+                        grupos vulneráveis.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -1357,7 +1507,7 @@
             question.addEventListener('click', () => {
                 const answer = question.nextElementSibling;
                 answer.classList.toggle('open');
-                
+
                 const icon = question.querySelector('i');
                 if (answer.classList.contains('open')) {
                     icon.classList.remove('fa-chevron-down');
@@ -1370,4 +1520,5 @@
         });
     </script>
 </body>
+
 </html>
